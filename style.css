@@ -1,9 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
 body {
     margin: 0;
     font-family: 'Orbitron', sans-serif;
     background: radial-gradient(circle at 20% 30%, #0e0e1a, #050510 80%);
     color: #f5f5f5;
 }
+
+.field img {
+    width: 100px;
+    height: 100px;
+}
+
+.field p {
+    font-family: 'Orbitron', sans-serif;
+    color: hsl(0, 0%, 95%);
+    font-size: 2rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* .field div {
+    display: flex;
+} */
 
 main {
     display: flex;
@@ -75,6 +93,22 @@ h1 {
     margin-top: 12px;
 }
 
-.atom img {
+.arb img {
     margin-top: 2px;
+}
+
+.displayCrypto {
+    margin-right: 30%;
+    margin-top: 15%;
+}
+
+.infoBTC,
+.infoETH,
+.infoSOL,
+.infoXRP,
+.infoBNB,
+.infoMATIC,
+.infoLINK,
+.infoARB {
+    display: none;
 }
