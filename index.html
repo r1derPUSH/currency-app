@@ -3,11 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Crypto Tracker</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
+<body> 
+    <main>
+        <h1>Crypto Currency</h1>
+
+        <div class="crypto">
+            <div class="containerOfCoins">
+                <div class="btc" onclick="btc()"><img src="img/btc.png" alt="BTC"><p class="btcTicker">BTC/USDT</p></div>
+                <div class="eth"><img src="img/eth.png" alt="ETH"><p class="ethTicker">ETH/USDT</p></div>
+                <div class="sol"><img src="img/sol.png" alt="SOL"><p class="solTicker">SOL/USDT</p></div>
+                <div class="xrp"><img src="img/xrp.png" alt="XRP"><p class="xrpTicker">XRP/USDT</p></div>
+                <div class="bnb"><img src="img/bnb.png" alt="BNB"><p class="bnbTicker">BNB/USDT</p></div>
+                <div class="matic"><img src="img/matic.png" alt="POL"><p class="matTicker">MATIC/USDT</p></div>
+                <div class="link"><img src="img/link.png" alt="LNK"><p class="matTicker">LINK/USDT</p></div>
+                <div class="atom"><img src="img/atom.png" alt="ATM"><p class="matTicker">ATOM/USDT</p></div>
+            </div>
+            <div class="displayCrypto">
+                <div class="field">
+                    <div class="info"><img class="imgRes"><p class="result"></p></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <button onclick="getData()">Get Data</button>
 
     <script src="main.js"></script>
 </body>
