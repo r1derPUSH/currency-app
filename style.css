@@ -114,7 +114,7 @@ h1 {
 }
 
 .blinking {
-  animation: blink 1s ease;
+  animation: blink .5s ease;
 }
 
 @keyframes blink {
