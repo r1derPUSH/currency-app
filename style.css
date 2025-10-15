@@ -1,22 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap");
 
 body {
-    margin: 0;
-    font-family: 'Orbitron', sans-serif;
-    background: radial-gradient(circle at 20% 30%, #0e0e1a, #050510 80%);
-    color: #f5f5f5;
+  margin: 0;
+  font-family: "Orbitron", sans-serif;
+  background: radial-gradient(circle at 20% 30%, #0e0e1a, #050510 80%);
+  color: #f5f5f5;
 }
 
 .field img {
-    width: 100px;
-    height: 100px;
+  width: 10vw;
+  height: 10vw;
 }
 
 .field p {
-    font-family: 'Orbitron', sans-serif;
-    color: hsl(0, 0%, 95%);
-    font-size: 2rem;
-    font-family: 'Roboto Mono', monospace;
+  font-family: "Orbitron", sans-serif;
+  color: hsl(0, 0%, 95%);
+  font-size: 2rem;
+  font-family: "Roboto Mono", monospace;
+}
+
+.field {
+  width: 30vw;
 }
 
 /* .field div {
@@ -24,18 +28,18 @@ body {
 } */
 
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
-    color: #00ffe7;
-    text-shadow: 0 0 12px #00ffe7, 0 0 40px #00aaff;
-    font-size: 3rem;
-    letter-spacing: 2px;
-    animation: glow 2s ease-in-out infinite alternate;
+  color: #00ffe7;
+  text-shadow: 0 0 12px #00ffe7, 0 0 40px #00aaff;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  animation: glow 2s ease-in-out infinite alternate;
 }
 
 @keyframes glow {
@@ -48,58 +52,58 @@ h1 {
 }
 
 .crypto {
-    display: flex;
-    justify-content: space-between;
-    width: 1400px;
-    height: 60vh;
-    background: hsla(0, 0%, 100%, 0.06);
-    border: 1px solid hsla(0, 0%, 100%, 0.12);
-    padding: 25px 35px;
-    border-radius: 20px;
-    box-shadow: 0 0 30px rgba(0, 255, 240, 0.3);
-    backdrop-filter: blur(14px);
-    transition: 0.3s;
+  display: flex;
+  justify-content: space-between;
+  width: 70vw;
+  height: 90%;
+  background: hsla(0, 0%, 100%, 0.06);
+  border: 1px solid hsla(0, 0%, 100%, 0.12);
+  padding: 25px 35px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 255, 240, 0.3);
+  backdrop-filter: blur(14px);
+  transition: 0.3s;
 }
 
 .containerOfCoins {
-    height: 100%;
+  height: 100%;
 }
 
 .containerOfCoins img {
-    width: 50px;
-    height: 50px;
-    margin-top: 2.8px;
-    margin-left: 15px;
+  width: 50px;
+  height: 50px;
+  margin-top: 2.8px;
+  margin-left: 15px;
 }
 
 .containerOfCoins div {
-    cursor: pointer;
-    display: flex;
-    width: 220px;
-    background: hsla(0, 0%, 80%, 0.06);
-    border-radius: 50px;
-    margin-bottom: 15px;
-    transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  width: 20vw;
+  background: hsla(0, 0%, 80%, 0.06);
+  border-radius: 50px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
 }
 
 .containerOfCoins div:hover {
-    background: hsla(0, 0%, 45%, 0.06);
+  background: hsla(0, 0%, 45%, 0.06);
 }
 
 .containerOfCoins p {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 1.5rem;
-    margin: 0;
-    margin-top: 12px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.5rem;
+  margin: 0;
+  margin-top: 12px;
 }
 
 .arb img {
-    margin-top: 2px;
+  margin-top: 2px;
 }
 
 .displayCrypto {
-    margin-right: 30%;
-    margin-top: 15%;
+  margin-right: 30%;
+  margin-top: 15%;
 }
 
 .infoBTC,
@@ -110,14 +114,19 @@ h1 {
 .infoMATIC,
 .infoLINK,
 .infoARB {
-    display: none;
+  display: none;
 }
 
 .blinking {
-  animation: blink .5s ease;
+  animation: blink 0.5s ease;
 }
 
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
